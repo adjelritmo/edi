@@ -15,14 +15,5 @@ export default defineConfig({
 
   ],
 
-  base: "/edi/",
-
-  server: {
-    host: "0.0.0.0",
-    port: 5173,
-    watch: {
-      usePolling: true,
-    },
-     historyApiFallback: true, // Versão simplificada
-  },
+  base: "/edi/"
 });
