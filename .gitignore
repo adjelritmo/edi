@@ -1,0 +1,142 @@
+# ============================================
+# LOGS
+# ============================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ============================================
+# ENVIRONMENT VARIABLES - DO NOT COMMIT!
+# ============================================
+# Backend environment files
+./backend/.env
+./backend/.env.*
+!./backend/.env.example
+./edi_data:
+
+# Frontend environment files
+./frontend/.env
+./frontend/.env.*
+!./frontend/.env.example
+
+# Root environment files (if any)
+.env
+.env.*
+!.env.example
+
+# ============================================
+# DEPENDENCIES
+# ============================================
+# Backend dependencies
+./backend/node_modules/
+./backend/.pnpm-store/
+
+# Frontend dependencies
+./frontend/node_modules/
+./frontend/.pnpm-store/
+
+# ============================================
+# BUILD OUTPUTS
+# ============================================
+# Backend build outputs
+./backend/dist/
+./backend/build/
+./backend/coverage/
+./backend/.next/
+./backend/.cache/
+
+# Frontend build outputs
+./frontend/dist/
+./frontend/build/
+./frontend/.next/
+./frontend/.nuxt/
+./frontend/.svelte-kit/
+./frontend/.vuepress/dist/
+./frontend/.cache/
+./frontend/coverage/
+
+# ============================================
+# IDE & EDITOR FILES
+# ============================================
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================
+# OPERATING SYSTEM FILES
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+desktop.ini
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+*.tmp
+*.temp
+.temp/
+tmp/
+temp/
+
+# ============================================
+# PACKAGE MANAGER LOCKS
+# ============================================
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+shrinkwrap.yaml
+
+# ============================================
+# UPLOADS & STORAGE (Backend specific)
+# ============================================
+./backend/uploads/
+./backend/storage/
+./backend/public/uploads/
+./backend/temp/
+
+# ============================================
+# SSL CERTIFICATES & KEYS
+# ============================================
+*.pem
+*.key
+*.crt
+*.cer
+
+# ============================================
+# DATABASE FILES (if using SQLite or similar)
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# DEBUG FILES
+# ============================================
+*.debug
+debug/
+*.pid
+
+# ============================================
+# TEST OUTPUTS
+# ============================================
+*.lcov
+.nyc_output/
+
+# ============================================
+# CUSTOM PROJECT SPECIFIC
+# ============================================
+# Add any project-specific ignore patterns here

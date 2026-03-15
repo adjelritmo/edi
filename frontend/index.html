@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDI +</title>
+  <link rel="shortcut icon" href="/edi/icon.png" type="image/x-icon">
+
+  <style>
+    /* Classes utilitárias */
+    .edi {
+      display: flex;
+    }
+
+    .edi-col {
+      flex-direction: column;
+    }
+
+    .edi-screen {
+      height: 100vh;
+    }
+
+    .edi-full {
+      height: 100%;
+    }
+
+    .edi-center {
+      justify-content: center;
+    }
+
+    .edi-items-center {
+      align-items: center;
+    }
+
+    .edi-white {
+      background-color: #ffffff;
+    }
+
+    .edi-rounded-full {
+      border-radius: 9999px;
+    }
+
+    .edi-border-4 {
+      border-width: 4px;
+    }
+
+    .edi-border-cyan-500 {
+      border-color: #06b6d4;
+    }
+
+    .edi-p-6 {
+      padding: 1.5rem;
+    }
+
+    .edi-animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: .5;
+      }
+    }
+
+    .mmx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .ttext-center {
+      text-align: center;
+    }
+
+    .mmt-2 {
+      margin-top: 0.5rem;
+    }
+
+    .edi-rounded-2xl {
+      border-radius: 100rem;
+    }
+
+    .image {
+      width: 112px;
+      height: 112px;
+    }
+
+    .loader {
+      width: 16px;
+      height: 16px;
+      position: relative;
+      left: -32px;
+      border-radius: 50%;
+      color: #a3a3a3;
+      background: currentColor;
+      box-shadow: 32px 0, -32px 0, 64px 0, 96px 0;
+    }
+
+    .loader::after {
+      content: '';
+      position: absolute;
+      left: -32px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 10px;
+      background: #2fd5ff;
+      animation: move 3s linear infinite alternate;
+    }
+
+    @keyframes move {
+
+      0%,
+      5% {
+        left: -32px;
+        width: 16px;
+      }
+
+      12%,
+      17% {
+        left: -32px;
+        width: 48px;
+      }
+
+      25%,
+      30% {
+        left: 0px;
+        width: 16px;
+      }
+
+      37%,
+      42% {
+        left: 0px;
+        width: 48px;
+      }
+
+      50%,
+      55% {
+        left: 32px;
+        width: 16px;
+      }
+
+      62%,
+      67% {
+        left: 32px;
+        width: 48px;
+      }
+
+      75%,
+      80% {
+        left: 64px;
+        width: 16px;
+      }
+
+      87%,
+      92% {
+        left: 64px;
+        width: 48px;
+      }
+
+      95%,
+      100% {
+        left: 96px;
+        width: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body class="edi-screen">
+  <div id="edi+" class="edi-full">
+    <div class="edi edi-col edi-full edi-center edi-items-center edi-white">
+      <div class="edi-rounded-full p-6 edi-white edi-animate-pulse">
+        <img src="/edi/equicenter.png" alt="logo-equicenter" class="image edi-rounded-2xl" />
+      </div>
+      <span class="loader mmx-auto ttext-center mmt-2"></span>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
