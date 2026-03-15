@@ -26,10 +26,7 @@ const port = 53493
 
 const host = '0.0.0.0'
 
-app.use(cors({
-    origin: ['http://localhost:5173', 'https://edi-ipb.onrender.com/'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE']
-}))
+app.use(cors())
 
 app.use(express.json())
 
