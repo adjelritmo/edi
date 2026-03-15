@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --base=/edi/",
-    "edi": "vite --base=/edi/",
-    "build": "vite build --base=/edi/",
+    "dev": "vite",
+    "edi": "vite",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
